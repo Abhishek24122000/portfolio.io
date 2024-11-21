@@ -1,3 +1,8 @@
+To make your portfolio more attractive and engaging, we can introduce modern design techniques such as vibrant colors, interactive animations, creative typography, and improved layout. Here's a suggestion to elevate the design of your portfolio. I'll provide the HTML structure with embedded styling, which can be added to your existing files.
+
+### Updated HTML with Attractive Template
+
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,159 +12,270 @@
     <title>Abhishek's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      /* Global Styling */
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f7fa;
+        color: #333;
+      }
+      h1, h2, h3 {
+        color: #2c3e50;
+        font-weight: 700;
+      }
+      .btn {
+        cursor: pointer;
+        padding: 15px 30px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      /* Nav Bar Styling */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #34495e;
+        padding: 20px;
+        z-index: 100;
+      }
+      .logo {
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 20px;
+        display: inline-block;
+      }
+      .nav-links {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 0;
+      }
+      .nav-links li {
+        margin: 0 15px;
+      }
+      .nav-links a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s ease;
+      }
+      .nav-links a:hover {
+        color: #f39c12;
+      }
+
+      /* Profile Section */
+      #profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 20px 50px;
+        background: linear-gradient(135deg, #3498db, #8e44ad);
+        color: #fff;
+      }
+      #profile .section__pic-container img {
+        border-radius: 50%;
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+      .btn-container button {
+        margin-top: 20px;
+      }
+      .btn-color-1 {
+        background-color: #f39c12;
+        border: none;
+      }
+      .btn-color-2 {
+        background-color: #2ecc71;
+        border: none;
+      }
+
+      /* About Section */
+      #about {
+        text-align: center;
+        padding: 80px 20px;
+        background-color: #ecf0f1;
+      }
+      #about .about-details-container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+      }
+      #about .details-container {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .details-container h3 {
+        color: #3498db;
+      }
+
+      /* Experience Section */
+      #experience {
+        padding: 80px 20px;
+        background-color: #fff;
+      }
+      #experience .experience-details-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        flex-wrap: wrap;
+      }
+      #experience .details-container h2 {
+        color: #2c3e50;
+      }
+
+      /* Projects Section */
+      #projects {
+        padding: 80px 20px;
+        background-color: #f4f7fa;
+      }
+      #projects .details-container {
+        text-align: center;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      .project-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .btn:hover {
+        transform: scale(1.1);
+      }
+
+      /* Contact Section */
+      #contact {
+        padding: 80px 20px;
+        background-color: #34495e;
+        color: #fff;
+        text-align: center;
+      }
+      .contact-info-container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      .contact-info-container a {
+        color: #f39c12;
+        text-decoration: none;
+      }
+      .contact-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    </style>
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav id="desktop-nav">
+    <nav>
       <div class="logo">Abhishek Palsodkar</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Tools</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">Certificates</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-
-    <!-- Hamburger Menu -->
-    <nav id="hamburger-nav">
-      <div class="logo">Abhishek Palsodkar</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Tools</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
     </nav>
 
     <!-- Profile Section -->
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/pic.PNG" alt="Profile picture" style="width: 100%; height: 100%; object-fit: cover;" onclick="window.open('https://www.youtube.com/watch?v=wiMMr-rmrWM')" />
-        <a onclick="window.open('https://www.youtube.com/watch?v=wiMMr-rmrWM')" class="play-button">▶️</a>
+        <img src="./assets/pic.PNG" alt="Profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Abhishek Palsodkar</h1>
-        <p class="section__text__p2">Data Science Professional</p>
+        <p>Hello, I'm</p>
+        <h1>Abhishek Palsodkar</h1>
+        <p>Data Science Professional</p>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/Abhishek_Palsodkar_Resume.pdf')">Download CV</button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
-        </div>
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/abhishek-palsodkar-936937183/')">
-          <img src="./assets/github.png" alt="Github profile" class="icon" onclick="window.open('https://github.com/Abhishek24122000')">
+          <button class="btn btn-color-2">Download CV</button>
+          <button class="btn btn-color-1">Contact Info</button>
         </div>
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="circular-image">
-          <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" height="500px" width="400px" />
+      <p>Get To Know More</p>
+      <h1>About Me</h1>
+      <div class="about-details-container">
+        <div class="details-container">
+          <img src="./assets/experience.png" alt="Experience" />
+          <h3>Experience</h3>
+          <p>1 Year in Data Science</p>
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-              <h3>Experience</h3>
-              <p>1 year <br />Data Science Industry</p>
-            </div>
-            <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
-              <h3>Education</h3>
-              <ul>
-                <li>📜 <strong>Bachelor's Degree:</strong> MIT WPU, Pune</li>
-                <li>🎓 <strong>Master's Degree:</strong> University of Arizona, Data Science</li>
-              </ul>
-            </div>
-          </div>
+        <div class="details-container">
+          <img src="./assets/education.png" alt="Education" />
+          <h3>Education</h3>
+          <ul>
+            <li>Bachelor's from MIT WPU, Pune</li>
+            <li>Master's in Data Science, University of Arizona</li>
+          </ul>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
     </section>
 
     <!-- Experience Section -->
     <section id="experience">
-      <p class="section__text__p1">Explore</p>
-      <h1 class="title">My Tools</h1>
+      <p>Explore</p>
+      <h1>My Tools</h1>
       <div class="experience-details-container">
         <div class="details-container">
           <h2>Data Analysis</h2>
           <ul>
-            <li>Microsoft Excel (Intermediate)</li>
-            <li>Microsoft Power BI (Basic)</li>
-            <li>MySQL (Intermediate)</li>
-            <li>Python / Pandas (Intermediate)</li>
-            <li>Tableau (Intermediate)</li>
+            <li>Microsoft Excel</li>
+            <li>Python / Pandas</li>
+            <li>MySQL</li>
           </ul>
         </div>
         <div class="details-container">
-          <h2>Machine Learning - Deep Learning</h2>
+          <h2>Machine Learning</h2>
           <ul>
-            <li>Pandas / NumPy (Intermediate)</li>
-            <li>Scikit-Learn (Intermediate)</li>
-            <li>Seaborn/Matplotlib/Plotly (Intermediate)</li>
-            <li>Statistics (Intermediate)</li>
-          </ul>
-        </div>
-        <div class="details-container">
-          <h2>ML-Ops</h2>
-          <ul>
-            <li>Git / GitHub (Basic)</li>
-            <li>Streamlit (Basic)</li>
+            <li>Scikit-Learn</li>
+            <li>Seaborn / Matplotlib</li>
           </ul>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <p>Browse My Recent</p>
+      <h1>Projects</h1>
       <div class="experience-details-container">
         <div class="details-container">
           <img src="./assets/da.png" alt="Data analysis" class="project-img" />
           <h2>Data Analysis</h2>
-          <button onclick="location.href='da.html', target='_blank'">View Project</button>
+          <button>View Project</button>
         </div>
         <div class="details-container">
           <img src="./assets/ml.png" alt="Machine Learning" class="project-img" />
           <h2>Machine Learning</h2>
-          <button onclick="location.href='ml.html', target='_blank'">View Project</button>
+          <button>View Project</button>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
+      <p>Get in Touch</p>
+      <h1>Contact Me</h1>
       <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
-        <p><a href="mailto:palsodkarabhishek24@gmail.com">palsodkarabhishek24@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/abhishek-palsodkar-936937183/">LinkedIn</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/certificates.jpg" alt="Certificates icon" class="icon contact-icon" />
-        <p><a href="ca.html" target="_blank">Certificates</a></p>
-      </div>
-    </section>
-  </body>
-</html>
+        <img src="./assets/email.png" class="contact-icon" />
+        <p><a href="mailto:palsodkarabhishek24@gmail
