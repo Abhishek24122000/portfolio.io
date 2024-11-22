@@ -1,3 +1,6 @@
+Here is the updated code with the changes made to replace "Prithviraj Patil" with "Abhishek Palsodkar" and adjusted content in all the relevant sections while keeping the master code format intact:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,270 +10,347 @@
     <title>Abhishek's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <style>
-      /* Global Styling */
-      body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f7fa;
-        color: #333;
-      }
-
-      h1, h2, h3 {
-        color: #2c3e50;
-        font-weight: 700;
-      }
-
-      .btn {
-        cursor: pointer;
-        padding: 15px 30px;
-        border-radius: 50px;
-        font-size: 16px;
-        font-weight: 600;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-      }
-
-      /* Nav Bar Styling */
-      nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #34495e;
-        padding: 20px;
-        z-index: 100;
-      }
-      .logo {
-        color: #fff;
-        font-size: 24px;
-        font-weight: bold;
-        margin-left: 20px;
-        display: inline-block;
-      }
-      .nav-links {
-        display: flex;
-        justify-content: flex-end;
-        list-style: none;
-        padding: 0;
-      }
-      .nav-links li {
-        margin: 0 15px;
-      }
-      .nav-links a {
-        color: #ecf0f1;
-        text-decoration: none;
-        font-size: 18px;
-        transition: color 0.3s ease;
-      }
-      .nav-links a:hover {
-        color: #f39c12;
-      }
-
-      /* Profile Section */
-      #profile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 100px 20px 50px;
-        background: linear-gradient(135deg, #3498db, #8e44ad);
-        color: #fff;
-      }
-      #profile .section__pic-container img {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      }
-      .btn-container button {
-        margin-top: 20px;
-      }
-      .btn-color-1 {
-        background-color: #f39c12;
-        border: none;
-      }
-      .btn-color-2 {
-        background-color: #2ecc71;
-        border: none;
-      }
-
-      /* About Section */
-      #about {
-        text-align: center;
-        padding: 80px 20px;
-        background-color: #ecf0f1;
-      }
-      #about .about-details-container {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        flex-wrap: wrap;
-      }
-      #about .details-container {
-        background: #fff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        width: 250px;
-      }
-      .details-container h3 {
-        color: #3498db;
-      }
-
-      /* Experience Section */
-      #experience {
-        padding: 80px 20px;
-        background-color: #fff;
-      }
-      #experience .experience-details-container {
-        display: flex;
-        justify-content: space-between;
-        gap: 50px;
-        flex-wrap: wrap;
-      }
-      #experience .details-container h2 {
-        color: #2c3e50;
-      }
-
-      /* Projects Section */
-      #projects {
-        padding: 80px 20px;
-        background-color: #f4f7fa;
-      }
-      #projects .details-container {
-        text-align: center;
-        background-color: #fff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      }
-      .project-img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-      .btn:hover {
-        transform: scale(1.1);
-      }
-
-      /* Contact Section */
-      #contact {
-        padding: 80px 20px;
-        background-color: #34495e;
-        color: #fff;
-        text-align: center;
-      }
-      .contact-info-container {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        align-items: center;
-        margin-bottom: 30px;
-      }
-      .contact-info-container a {
-        color: #f39c12;
-        text-decoration: none;
-      }
-      .contact-icon {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-      }
-    </style>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav>
+    <nav id="desktop-nav">
       <div class="logo">Abhishek Palsodkar</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Tools</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Tools</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+        </ul>
+      </div>
     </nav>
-
-    <!-- Profile Section -->
+    <nav id="hamburger-nav">
+      <div class="logo">Abhishek Palsodkar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Tools</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+        </div>
+      </div>
+    </nav>
     <section id="profile">
+      <style>
+        .section__pic-container {
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        .play-button {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+        }
+      </style>
       <div class="section__pic-container">
-        <img src="./assets/pic.PNG" alt="Profile picture" />
+        <img
+          src="./assets/pic.PNG"
+          alt="Abhishek's profile picture"
+          style="width: 100%; height: 100%; object-fit: cover;"
+          onclick="window.open('https://www.youtube.com/watch?v=wiMMr-rmrWM')"
+        />
+        <a
+          onclick="window.open('https://www.youtube.com/watch?v=wiMMr-rmrWM')"
+          class="play-button"
+        >
+          ▶️
+        </a>
       </div>
       <div class="section__text">
-        <p>Hello, I'm</p>
-        <h1>Abhishek Palsodkar</h1>
-        <p>Data Science Professional</p>
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Abhishek Palsodkar</h1>
+        <p class="section__text__p2">Data Science Professional</p>
         <div class="btn-container">
-          <button class="btn btn-color-2">Download CV</button>
-          <button class="btn btn-color-1">Contact Info</button>
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Abhishek_Palsodkar_RESUME.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/abhishek-palsodkar/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/abhishekpalsodkar')"
+          />
         </div>
       </div>
     </section>
-
-    <!-- About Section -->
     <section id="about">
-      <p>Get To Know More</p>
-      <h1>About Me</h1>
-      <div class="about-details-container">
-        <div class="details-container">
-          <img src="./assets/experience.png" alt="Experience" />
-          <h3>Experience</h3>
-          <p>1 Year in Data Science</p>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="circular-image">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+            height="500px"
+            width="400px"
+          />
         </div>
-        <div class="details-container">
-          <img src="./assets/education.png" alt="Education" />
-          <h3>Education</h3>
-          <ul>
-            <li>Bachelor's from MIT WPU, Pune</li>
-            <li>Master's in Data Science, University of Arizona</li>
-          </ul>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1 Year in Data Science</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>M.S. - Data Science (University of Arizona)</p>
+              <p>B.E. - I&C (MIT WPU, Pune)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>🌐 Welcome to My World of Data-Driven Innovation! 💡</p>
+            <br />
+            <p>
+              📊 Data Expert specializing in Data Analysis and Machine
+              Learning. <br />
+              💻 Skilled in extracting insights, building predictive models, and
+              driving data-driven decisions. <br />
+              🤖 Proficient in tools and technologies for data science and
+              visualization. <br />
+            </p>
+            <p>
+              🌟 Let's connect and explore the endless possibilities!
+            </p>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- Experience Section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
     <section id="experience">
-      <p>Explore</p>
-      <h1>My Tools</h1>
+      <p class="section__text__p1">Explore</p>
+      <h1 class="title">My Tools</h1>
       <div class="experience-details-container">
-        <div class="details-container">
-          <h2>Data Analysis</h2>
-          <ul>
-            <li>Microsoft Excel</li>
-            <li>Python / Pandas</li>
-            <li>MySQL</li>
-          </ul>
-        </div>
-        <div class="details-container">
-          <h2>Machine Learning</h2>
-          <ul>
-            <li>Scikit-Learn</li>
-            <li>Seaborn / Matplotlib</li>
-          </ul>
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Analysis</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Excel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Machine Learning</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas / NumPy</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scikit-Learn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
-
-    <!-- Projects Section -->
     <section id="projects">
-      <p>Browse My Recent</p>
-      <h1>Projects</h1>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
       <div class="experience-details-container">
-        <div class="details-container">
-          <img src="./assets/da.png" alt="Data analysis" class="project-img" />
-          <h2>Data Analysis</h2>
-          <button>View Project</button>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/da.png"
+                alt="Data analysis"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Data Analysis</h2>
+            <div class="btn-container">
+              <img
+                src="./assets/arrow-right.png"
+                alt="arrow-right"
+                class="next"
+                onclick="location.href='da.html', target='_blank'"
+              />
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+             
+
+ <img
+                src="./assets/ml.png"
+                alt="Machine Learning"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Machine Learning
+            </h2>
+            <div class="btn-container">
+              <img
+                src="./assets/arrow-right.png"
+                alt="arrow-right"
+                class="next"
+                onclick="location.href='ml.html', target='_blank'"
+              />
+            </div>
+          </div>
         </div>
-        <div class="details-container">
-          <img src="./assets/ml.png" alt="Machine Learning" class="project-img" />
-          <h2>Machine Learning</h2>
-          <button>View Project</button>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:abhishekpalsodkar.pro@gmail.com">
+              abhishekpalsodkar.pro@gmail.com
+            </a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              onclick="window.open('https://www.linkedin.com/in/abhishek-palsodkar/')"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/certificates.jpg"
+            alt="Certificates icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a onclick="location.href='ca.html', target='_blank'"
+              >Certificates</a
+            >
+          </p>
         </div>
       </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <p>Get in T
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Tools</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        &#10024 Crafted with curiosity &#128640 &#169; 2024 Abhishek Palsodkar
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
