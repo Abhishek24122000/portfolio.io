@@ -5,26 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abhishek's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <style>
-      /* Global Font Styling */
-      body, h1, h2, h3, p, a, button, nav, ul, li {
-        font-family: 'Roboto Mono', monospace;
-      }
-    </style>
   </head>
   <body>
     <nav id="desktop-nav">
       <div class="logo">Abhishek Palsodkar</div>
-      <div>
+      <div> 
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Tools</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Certificates</a></li>
         </ul>
       </div>
     </nav>
@@ -41,7 +34,7 @@
           <li><a href="#experience" onclick="toggleMenu()">Tools</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+          <li><a href="#Certificates" onclick="toggleMenu()">Certificates</a></li>
         </div>
       </div>
     </nav>
@@ -60,23 +53,12 @@
         }
       </style>
       <div class="section__pic-container">
-        <img
-          src="./assets/pic.PNG"
-          alt="Abhishek's profile picture"
-          style="width: 100%; height: 100%; object-fit: cover;"
-          onclick="window.open('https://www.youtube.com/watch?v=wiMMr-rmrWM')"
-        />
-        <a
-          onclick="window.open('https://www.youtube.com/watch?v=wiMMr-rmrWM')"
-          class="play-button"
-        >
-          ▶️
-        </a>
-      </div>
+        <img src="./assets/pic.JPEG" alt="Abhishek's profile picture" style="width: 100%; height: 100%; object-fit: cover;" 
+        </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Abhishek Palsodkar</h1>
-        <p class="section__text__p2">Aspiring Data Analyst</p>
+        <p class="section__text__p2">Data Science Professional</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -93,8 +75,8 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="window.open('www.linkedin.com/in/abhishek-palsodkar-936937183')"
-          />
+            onclick="window.open('https://www.linkedin.com/in/abhishek-palsodkar-936937183/')"
+            />
           <img
             src="./assets/github.png"
             alt="My Github profile"
@@ -110,7 +92,7 @@
       <div class="section-container">
         <div class="circular-image">
           <img
-            src="./assets/about-pic.jpg"
+            src="./assets/about-pic.jpg" 
             alt="Profile picture"
             class="about-pic"
             height="500px"
@@ -118,26 +100,42 @@
           />
         </div>
         <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p> 1 Year🌟Data Science Domain  <br />Data Analyst Intern </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BCA - MIT WPU Pune</p>
+              <p>MS - Data Science(University of Arizona)</p>
+            </div>
+          </div>
           <div class="text-container">
-            <p>🌐 Myself, Abhishek Palsodkar, an Aspiring Data Analyst 📶.</p>
-            <p>
-              I have a strong foundation in Python, SQL, and Excel, with
-              advanced skills in data visualization through Tableau and Power BI
-              📊.
+            <p>🌐 Welcome to My World of Data-Driven Innovation!💡</p>
+            <br>
+            <p>  📊 Data Expert specializing in Data Analysis and Machine Learning. <br>
+                 💻 Skilled in extracting insights, building predictive models, and driving data-driven decisions. <br>
+                 🤖 Proficient in Big Data technologies like Hadoop and Hive for managing and optimizing large datasets. <br>
+                 🌐 Cloud Specialist, leveraging AWS and Azure to deliver high-availability, scalable, and efficient solutions.<br>
             </p>
-            <p>
-              I am knowledgeable in statistical analysis and predictive modeling
-              for extracting insights and tackling complex challenges 📈. My
-              passion lies in using data to support impactful decision-making in
-              fast-paced, innovation-driven environments 🦾.
-            </p>
-            <p>
-              I am eager to bring my skills and enthusiasm to a data-focused
-              role and contribute to a forward-thinking team 🎯.
+            <p> 5⭐ Coder at Hackerrank in  Python & SQL </p>
+            <p>🌟 Let's connect and explore the endless possibilities! 
             </p>
           </div>
         </div>
       </div>
+
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -151,14 +149,116 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Data Analysis Tools</h2>
-            <ul>
-              <li>Python</li>
-              <li>MySQL</li>
-              <li>Tableau</li>
-              <li>Excel</li>
-              <li>Power BI</li>
-            </ul>
+            <h2 class="experience-sub-title">Data Analysis</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Excel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableu</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python / Pandas</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Machine Learning </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas / NumPy</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scikit-Learn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Seaborn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Statistics</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+            
+            </div>
           </div>
         </div>
       </div>
@@ -184,33 +284,31 @@
             </div>
             <h2 class="experience-sub-title project-title">Data Analysis</h2>
             <div class="btn-container">
-              <img
-                src="./assets/arrow-right.png"
-                alt="arrow-right"
-                class="next"
-                onclick="location.href='da.html', target='_blank'"
-              />
+                <img 
+                  src="./assets/arrow-right.png"
+                  alt="arrow-right" 
+                  class="next"
+                  onclick="location.href='da.html', target='_blank'">
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/ml.png"
-                alt="Machine Learning"
+                alt="machine Learning"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">
-              Machine Learning
-            </h2>
+            <h2 class="experience-sub-title project-title">Machine Learning</h2>
             <div class="btn-container">
-              <img
-                src="./assets/arrow-right.png"
-                alt="arrow-right"
-                class="next"
-                onclick="location.href='ml.html', target='_blank'"
-              />
+              <img 
+                  src="./assets/arrow-right.png"
+                  alt="arrow-right" 
+                  class="next"
+                  onclick="location.href='ml.html', target='_blank'">
             </div>
+          </div>
+          
           </div>
         </div>
       </div>
@@ -231,11 +329,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p>
-            <a href="mailto:palsodkarabhishek24@gmail.com">
-              palsodkarabhishek24@gmail.com
-            </a>
-          </p>
+          <p><a href="mailto:palsodkarabhishek24@gmail.com">palsodkarabhishek24@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -243,27 +337,30 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p>
-            <a
-              onclick="window.open('www.linkedin.com/in/abhishek-palsodkar-936937183')"
-              >LinkedIn</a
-            >
-          </p>
+          <p><a onclick="window.open('https://www.linkedin.com/in/abhishek-palsodkar-936937183/)">LinkedIn</a></p>
         </div>
         <div class="contact-info-container">
           <img
             src="./assets/certificates.jpg"
-            alt="Certificates icon"
+            alt="LinkedIn icon"
             class="icon contact-icon"
+
           />
-          <p>
-            <a onclick="location.href='ca.html', target='_blank'"
-              >Certificates</a
-            >
-          </p>
+          <p><a onclick="location.href='ca.html', target='_blank'">Certificates</a></p>
         </div>
       </div>
     </section>
+
+    
+    <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+</section>
+
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -275,9 +372,7 @@
           </ul>
         </div>
       </nav>
-      <p>
-        &#10024 Crafted with curiosity &#128640 &#169; 2024 Abhishek Palsodkar
-      </p>
+      <p>&#10024 Crafted with curiosity &#128640 &#169; 2024 Abhishek Palsodkar</p>
     </footer>
     <script src="script.js"></script>
   </body>
