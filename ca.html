@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates | Abhishek</title>
+  <link rel="stylesheet" href="style.css?v=2025-07-21">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <style>
+    .certificates-container {
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .certificate {
+      max-width: 300px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .certificate:hover {
+      transform: scale(1.05);
+    }
+    .certificate img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center; margin-top: 2rem;">📜 My Certificates</h1>
+
+  <div class="certificates-container" data-aos="fade-up">
+    <!-- Certificate 1 -->
+    <a href="assets/images/IIITB.png" target="_blank" class="certificate" title="Click to open IIITB Certificate">
+      <img src="assets/images/IIITB.png" alt="IIITB Certificate">
+    </a>
+
+    <!-- Certificate 2 -->
+    <a href="assets/images/MLC.png" target="_blank" class="certificate" title="Click to open MLC Certificate">
+      <img src="assets/images/MLC.png" alt="MLC Certificate">
+    </a>
+  </div>
+
+  <footer class="footer" data-aos="fade-in" style="text-align:center; margin-top: 3rem;">
+    &copy; 2025 Abhishek Palsodkar
+  </footer>
+
+  <!-- AOS Scroll Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+
+</body>
+</html>

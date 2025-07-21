@@ -1,0 +1,346 @@
+:root {
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  background-image: url('assets/images/BI.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 🌍 HEADER */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem 2rem 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.top-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.header-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1.2rem;
+  max-width: 50%;
+  transform: translateY(10px);
+}
+
+.header-right a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.header-right a img:hover {
+  transform: scale(1.2);
+  filter: brightness(0);
+}
+
+/* 👤 ABOUT */
+.about-section {
+  padding: 4rem 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  z-index: 3;
+}
+
+.about-image {
+  flex: 1;
+  text-align: right;
+}
+
+.about-image img {
+  max-width: 320px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+}
+
+/* 🌀 SKILLS */
+.skills-section {
+  padding: 2rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+.skills-carousel {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.carousel-track {
+  display: flex;
+  animation: scrollSkills 30s linear infinite;
+}
+
+.skills-carousel img {
+  height: 40px;
+  margin: 0 30px;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.4));
+}
+
+@keyframes scrollSkills {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* 💼 PROJECTS */
+.projects-section {
+  padding: 4rem 8%;
+  position: relative;
+  z-index: 2;
+}
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 280px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 1rem 0 1.5rem;
+  font-size: 1.2rem;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: crimson;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* 🎓 CERTIFICATES */
+.certificates-section {
+  padding: 3rem 8%;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.certificates-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.certificates-section ul {
+  list-style: none;
+}
+
+.certificates-section ul li a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--black);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.certificates-section ul li a:hover {
+  transform: scale(1.05);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* 📬 CONTACT */
+.contact-section {
+  padding: 3rem 8%;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 500;
+  color: var(--black);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-links a:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: scale(1.05);
+}
+
+.contact-links a img {
+  height: 24px;
+}
+
+/* 🔗 FOOTER */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: var(--black);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  margin-top: auto; /* <-- ✨ This line was updated from 3rem to auto */
+}
+
+/* 📦 VERTICAL PROJECT CARDS */
+.vertical-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 8%;
+}
+
+.project-card-vertical {
+  display: flex;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card-vertical:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+  min-width: 60px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* 🎯 FIXED ICON SIZE */
+.icon-container img.project-icon {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+  margin-top: 4px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 6px;
+}
+
+.project-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.btn-project {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-project:hover {
+  background: #333;
+}
